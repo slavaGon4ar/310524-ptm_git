@@ -1,0 +1,16 @@
+  255  git add history.txt
+  256  git commit -m "Added history of commands"
+  257  git push
+  258  cd /Users/slavagon4ar/Documents/GitHub/
+  259  git clone git@github.com:slavaGon4ar/310524-ptm_git.git
+  260  cd /Users/slavagon4ar/Documents/GitHub/310524-ptm_git
+  261  git checkout -b feature
+  262  echo "# My Project" > README.md
+  263  echo "*.log" > .gitignore
+  264  git add README.md .gitignore
+  265  git commit -m "Added README.md and updated .gitignore"
+  266  git push -u origin feature
+  267  git commit --amend -m "Added README.md and updated .gitignore ammend"
+  268  git push --force
+  269  git checkout main
+  270  git merge feature
